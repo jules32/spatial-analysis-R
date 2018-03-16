@@ -1,14 +1,30 @@
-#Introduction to spatial analysis in R
+# Introduction to spatial analysis in R
 
-This repository has the code and data files necessary for the introduction to spatial analysis in R workshop from August 27 and September 23 at 2015 at UCSB.
+### Jamie Afflerbach
 
-The code is stored in the `intro_spatial_data_R.Rmd` file. The code has been rendered using [knitr](http://yihui.name/knitr/) to create both a [PDF](https://github.com/jafflerbach/spatial-analysis-R/blob/master/intro_spatial_data_R.pdf) and an [.html](https://cdn.rawgit.com/jafflerbach/spatial-analysis-R/master/intro_spatial_data_R.html) to use as references rather than running the code again in the future.
+Click on the links below for the tutorials on:
 
-**The objective is to learn how to use different types of spatial data to answer the scientific question:**
+- [sf](https://rawgit.com/jafflerbach/spatial-analysis-R/gh-pages/intro_to_sf.html)
+- [raster analysis](https://rawgit.com/jafflerbach/spatial-analysis-R/gh-pages/intro_spatial_data_R.html)
 
-####What areas within the California Current are suitable for Red Tuna Crab aquaculture?
+R is getting better and better for spatial data visualization and analyses. This tutorial specifically focuses on working with raster, or gridded, data in R and gives a brief introduction to the [`sf` package](https://r-spatial.github.io/sf/articles/sf1.html).
+
+You can either fork this repository into your personal GitHub account, or download the repoository as a .zip file by hitting the green "Clone or Download" button.
+
+## Required libraries
+
+You will need the following libraries for the tutorial:
+
+`sf`, `rgdal`, `dplyr`, `ggplot2`, `raster`, `devtools`, all of which are on CRAN and can be installed using `install.packages()` in your R console. You will also need to install a new package, [`fasterize`](https://github.com/ecohealthalliance/fasterize) using devtools. For this you'll need to run:
+
+```r
+devtools::install_github("ecohealthalliance/fasterize")
+```
 
 
-![](./images/crab.png)
 
-*Disclaimer: This is a completely made up scientific question. I very much doubt that red tuna crabs will be a viable aquaculture or wild caught resource and their environmental preferences are also entirely arbitrary.*
+
+
+
+
+
